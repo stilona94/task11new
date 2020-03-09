@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>My Dashboard | Weather</title>
+  <link id="favicon" rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <div class="dashboard-container weather-container">
+    <div class="header">
+      <div class="logo-container">
+        <a href="/" title="My Dashboard">
+          <img src="./images/logo.png" alt="My Dashboard" />
+        </a>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="menu">
+        <a href="./" class="menu__item">Home</a>
+        <a href="./news.html" class="menu__item">News</a>
+        <a href="./weather.html" class="menu__item active">Weather</a>
+        <a href="#" class="menu__item">TV Online</a>
+        <a href="#" class="menu__item">Time</a>
+      </div>
+    </div>
+    <div class="weather-wrapper">
+      <div class="layer layer--fog"></div>
+      <div class="container-fluid">
+
+        <div class="row--main">
+          <!--MAIN-->
+          <div class="current-weather col-12 col-sm-6 col-md-10">
+            <img src="./images/weather/fog.svg" alt="Fog" class="current-weather__icon" />
+            <span class="current-weather__type">Fog</span>
+            <span class="current-weather__city">Cracow, Poland</span>
+            <span class="temp">
+              <span class="temp__number">8</span>
+              <span class="temp__unit">&#8451;</span>
+            </span>
+            <button class="location">
+              <img src="./images/weather/marker.png" class="location__icon" />
+              <span class="location-text">Change location</span>
+            </button>
+          </div>
+        </div>
+        <!--MAIN-->
+        <div class="weather-sidebar col-12 col-sm-6 col-md-2">
+          <div class="info-block">
+            <img src="./images/weather/humidity.svg" class="info-block__icon" alt="humidity" />
+
+            <div class="info-block__data">
+              <span class="data-label">Humidity</span>
+              <span class="data-value">50%</span>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <img src="./images/weather/pressure.svg" class="info-block__icon" alt="pressure" />
+
+            <div class="info-block__data">
+              <span class="data-label">Air Pressure</span>
+              <span class="data-value">1000 PS</span>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <img src="./images/weather/rain.svg" class="info-block__icon" alt="rain" />
+
+            <div class="info-block__data">
+              <span class="data-label">Chance of rain</span>
+              <span class="data-value">0%</span>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <img src="./images/weather/wind.svg" class="info-block__icon" alt="wind" />
+
+            <div class="info-block__data">
+              <span class="data-label">Wind Speed</span>
+              <span class="data-value">1.2 km/h</span>
+            </div>
+          </div>
+        </div>
+        <!--MAIN-->
+      </div>
+
+      <div class="row--secondary">
+        <!--SECONDARY-->
+        <div class="day-name col-12 col-md-12">Monday</div>
+        <!--SECONDARY-->
+        <div class="forecast col-12 col-sm-6 col-md-2">
+          <span class="forecast__weekday">Tuesday</span>
+          <span class="forecast__temp">7 &#8451;</span>
+          <span class="forecast__feels">Feels like 8 &#8451;</span>
+        </div>
+        <!--SECONDARY-->
+        <div class="forecast col-12 col-sm-6 col-md-2">
+          <span class="forecast__weekday">Wednesday</span>
+          <span class="forecast__temp">7 &#8451;</span>
+          <span class="forecast__feels">Feels like 8 &#8451;</span>
+        </div>
+        <!--SECONDARY--> 
+        <div class="forecast col-12 col-sm-6 col-md-2">
+          <span class="forecast__weekday">Thursday</span>
+          <span class="forecast__temp">7 &#8451;</span>
+          <span class="forecast__feels">Feels like 8 &#8451;</span>
+        </div>
+        <!--SECONDARY-->
+        <div class="forecast col-12 col-sm-6 col-md-2">
+          <span class="forecast__weekday">Friday</span>
+          <span class="forecast__temp">7 &#8451;</span>
+          <span class="forecast__feels">Feels like 8 &#8451;</span>
+        </div>
+        <!--SECONDARY-->
+        <div class="forecast col-12 col-sm-6 col-md-2">
+          <span class="forecast__weekday">Saturday</span>
+          <span class="forecast__temp">7 &#8451;</span>
+          <span class="forecast__feels">Feels like 8 &#8451;</span>
+        </div>
+        <!--SECONDARY-->
+        <div class="forecast col-12 col-sm-6 col-md-2">
+          <span class="forecast__weekday">Sunday</span>
+          <span class="forecast__temp">7 &#8451;</span>
+          <span class="forecast__feels">Feels like 8 &#8451;</span>
+        </div>
+        <!--SECONDARY-->
+      </div>
+
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
